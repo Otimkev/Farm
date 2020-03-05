@@ -26,3 +26,11 @@ function includeHTML() {
   }
 };
 includeHTML();
+
+var mangoes=document.getElementById("title").addEventListener('click',openMenu)
+
+function openMenu(){
+  document.getElementById('dropdowns').classList.toggle("oranges");
+}
+
+
