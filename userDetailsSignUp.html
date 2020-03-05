@@ -4,15 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>FARM PORTAL</title>
+    <title>Client Sign Up</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
   
-
+    <link rel="stylesheet" href="./include/custom.css">
 </head>
 <body>
     <div w3-include-html='./include/header.html'></div>
     
+    <div class="main">
 
+        <section class="signup">
+            <!-- <img src="images/signup-bg.jpg" alt=""> -->
+            <div class="container">
+                <div class="signup-content">
+                    <form method="POST" id="signup-form" class="signup-form">
+                        <h2 class="form-title">Client Sign Up</h2>
+                        <div class="form-group">
+                            <input type="text" class="form-input" name="name" id="name" placeholder="Your Name"/>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-input" name="email" id="email" placeholder="Your Email"/>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-input" name="country" id="country" placeholder="Country of Origin"/>
+                        
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" class="form-input" name="contact" id="contact" placeholder="Contact"/>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-input" name="company" id="company" placeholder="Company Name"/>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
+                            <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree to all the  <a href="#" class="term-service">Terms of service</a></label>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" name="submit" id="submit" class="form-submit" value="Sign up"/>
+                        </div>
+                    </form>
+                    <p class="loginhere">
+                        Do you have an account with us? <a href="./userLogin.html" class="loginhere-link">Login here</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </div>
     
     <div w3-include-html="./include/footer.html"></div>
   </body>
